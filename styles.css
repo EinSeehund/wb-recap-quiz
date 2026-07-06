@@ -15,6 +15,7 @@
 body {
     background-color: var(--bg-color-medium);
     color: var(--color-font);
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 header {
@@ -22,6 +23,13 @@ header {
     color: var(--bg-color-light);
     text-align: center;
     padding: 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+main {
+    padding-top: 100px;
 }
 
 nav {
@@ -29,10 +37,10 @@ nav {
     width: 100vw;
     position: fixed;
     bottom: 0;
+    z-index: 10;
 }
 
 h1 {
-    font-family: Verdana, Geneva, sans-serif;
     font-size: 1.5rem;
     font-weight: 100;
 }
@@ -47,4 +55,68 @@ h1 {
 
 .main-nav__item--active {
     border-bottom: 3px dotted var(--color-font);
+}
+
+.card {
+    width: 90%;
+    background-color: var(--bg-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card__btn-bookmark {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--bg-color-light);
+    position: absolute;
+    top: -25px;
+    right: 10px;
+}
+
+.card__btn-solution {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--bg-color-light);
+    background-color: var(--bg-color-dark);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.card__img {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+}
+
+.card__bird-name {
+    margin-bottom: 0.6rem;
+}
+
+.card__tag-wrapper {
+    align-self: flex-start;
+    display: flex;
+}
+
+.card__tag {
+    background-color: var(--color-dark);
+    color: var(--bg-color-light);
+    padding: 2px 7px;
+    margin-right: 3px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.home__quizfeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
