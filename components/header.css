@@ -7,3 +7,11 @@ header {
     width: 100vw;
     z-index: 10;
 }
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 20vw;
+        text-align: left;
+        padding-left: 20px;
+    }
+}

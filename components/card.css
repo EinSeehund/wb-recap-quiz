@@ -1,5 +1,6 @@
 .card {
     width: 100%;
+    max-width: 400px;
     background-color: var(--bg-color-light);
     display: flex;
     flex-direction: column;
