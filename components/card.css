@@ -1,0 +1,62 @@
+.card {
+    width: 100%;
+    background-color: var(--bg-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card__btn-bookmark {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--bg-color-light);
+    position: absolute;
+    top: -25px;
+    right: 10px;
+}
+
+.card__btn-solution {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--bg-color-light);
+    background-color: var(--bg-color-dark);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.card__img {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+}
+
+.card__bird-name {
+    margin-bottom: 0.6rem;
+}
+
+.card__bird-name--hidden {
+    background-color: var(--color-font);
+}
+
+.card__tag-wrapper {
+    align-self: flex-start;
+    display: flex;
+}
+
+.card__tag {
+    background-color: var(--color-dark);
+    color: var(--bg-color-light);
+    padding: 2px 7px;
+    margin-right: 3px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}

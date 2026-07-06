@@ -1,0 +1,9 @@
+header {
+    background-color: var(--color-dark);
+    color: var(--bg-color-light);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
