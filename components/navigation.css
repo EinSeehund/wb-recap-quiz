@@ -52,12 +52,13 @@ nav {
     }
 
     .main-nav__item {
-        padding-left: 10px;
+        padding-left: 13px;
     }
 
     .main-nav__item--active {
         border-left: 3px dotted var(--color-font);
         border-bottom: none;
+        padding-left: 10px;
     }
 
     .main-nav__item--text {
