@@ -38,6 +38,14 @@ li a {
     text-decoration: none;
 }
 
+.favourites__feed {
+    background-color: var(--bg-color-dark);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: stretch;
+}
+
 @media screen and (min-width: 1200px) {
     h1 {
         letter-spacing: 3px;
@@ -46,5 +54,9 @@ li a {
     main {
         padding-top: 50px;
         margin-left: 20vw;
+    }
+
+    .favourites__feed {
+        max-width: 50vw;
     }
 }
