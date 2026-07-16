@@ -20,6 +20,7 @@
     position: absolute;
     top: -25px;
     right: 10px;
+    cursor: pointer;
 }
 
 .card__btn-bookmark--check {
@@ -30,16 +31,23 @@
     background-color: rgb(239, 3, 27);
 }
 
+.card__btn-bookmark--img-filtered {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7448%)
+        hue-rotate(183deg) brightness(98%) contrast(94%);
+}
+
 .card__btn-solution {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1.5px;
+    font-size: 10px;
     color: var(--bg-color-light);
     background-color: var(--bg-color-dark);
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 .card__img {
@@ -50,10 +58,12 @@
 
 .card__bird-name {
     margin-bottom: 0.6rem;
+    transition: background-color 0.2s;
 }
 
 .card__bird-name--hidden {
     background-color: var(--color-font);
+    transition: background-color 0.2s;
 }
 
 .card__tag-wrapper {
