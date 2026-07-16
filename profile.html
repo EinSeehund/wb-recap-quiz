@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <script src="profile.js" defer></script>
         <title>What's that bird? - Profile</title>
     </head>
     <body>
@@ -31,6 +32,15 @@
                         aria-label="Favourites"
                         ><img src="assets/feather.png" aria-hidden="true" />
                         <p class="main-nav__item--text">Favourites</p></a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="form.html"
+                        class="main-nav__item"
+                        aria-label="Add new bird"
+                        ><img src="assets/egg.svg" aria-hidden="true" />
+                        <p class="main-nav__item--text">New bird</p></a
                     >
                 </li>
                 <li>
@@ -66,26 +76,32 @@
                 </div>
                 <div class="counter-wrapper">
                     <div class="profile__counter">
-                        <img src="assets/message-circle-question-mark.png" />
+                        <img
+                            src="assets/message-circle-question-mark.png"
+                            class="filter__black-to-white"
+                        />
                         <p>12</p>
                     </div>
                     <div class="profile__counter">
-                        <img src="assets/feather.png" />
+                        <img
+                            src="assets/feather.png"
+                            class="filter__black-to-white"
+                        />
                         <p>4</p>
                     </div>
                 </div>
                 <h3>Settings</h3>
                 <div class="setting">
                     <p>Dark mode</p>
-                    <img src="assets/toggle-left.svg" />
+                    <img src="assets/toggle-left.svg" class="toggle-button" data-js="dark-mode-button"/>
                 </div>
                 <div class="setting">
                     <p>Some other setting</p>
-                    <img src="assets/toggle-left.svg" />
+                    <img src="assets/toggle-left.svg" class="toggle-button" />
                 </div>
                 <div class="setting">
                     <p>Another setting</p>
-                    <img src="assets/toggle-left.svg" />
+                    <img src="assets/toggle-left.svg" class="toggle-button" />
                 </div>
             </div>
         </main>

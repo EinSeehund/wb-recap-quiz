@@ -21,11 +21,12 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 40px;
+    color: white;
 }
 
 .profile__counter {
     /* border: 2px solid var(--color-font); */
-    background-color: var(--bg-color-dark);
+    background-color: var(--color-dark);
     display: flex;
     justify-content: space-around;
     width: 7rem;
@@ -43,4 +44,8 @@
 .content-wrapper {
     width: 80%;
     max-width: 600px;
+}
+
+.toggle-button {
+    cursor: pointer;
 }
