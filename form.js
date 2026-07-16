@@ -13,21 +13,22 @@ let characterCount = 0;
 newBirdForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
+    // CREATING ELEMENTS FOR NEW CARD
     const newCard = document.createElement("div");
     const bookmarkButton = document.createElement("button");
+    const bookmarkIcon = document.createElement("img");
     const image = document.createElement("img");
     const thisIsText = document.createElement("p");
     const birdName = document.createElement("h2");
     const visibilityButton = document.createElement("button");
     const tagWrapper = document.createElement("div");
 
+    // APPLYING CLASSES, ADDING TEXT AND HTML
     newCard.classList.add("card");
     bookmarkButton.classList.add("card__btn-bookmark");
-    bookmarkButton.innerHTML = `<img
-                src="assets/feather.png"
-                class="card__btn-bookmark--img"
-                data-js="card__btn-bookmark--img"
-            />`;
+    bookmarkIcon.src = "assets/feather.png";
+    bookmarkIcon.classList.add("card__btn-bookmark--img");
+    bookmarkButton.append(bookmarkIcon);
     image.classList.add("card__img");
     image.src = `${inputImgUrl.value}`;
     thisIsText.textContent = "This is a(n)";
@@ -42,6 +43,14 @@ newBirdForm.addEventListener("submit", (event) => {
             <p class="card__tag">${inputBirdType.value}</p>
     `;
 
+    // ADDING VISUAL FEEDBACK TO BOOKMARK BUTTON
+    bookmarkButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        bookmarkButton.classList.toggle("card__btn-bookmark--check");
+        bookmarkIcon.classList.toggle("card__btn-bookmark--img-filtered");
+    });
+
+    // ADDING FUNCTIONALITY TO VISIBILITY BUTTON
     let answerVisible = false;
     visibilityButton.addEventListener("click", (event) => {
         event.preventDefault();
@@ -56,6 +65,7 @@ newBirdForm.addEventListener("submit", (event) => {
         }
     });
 
+    // APPENDING ALL ELEMENTS TO NEW CARD
     newCard.append(bookmarkButton);
     newCard.append(image);
     newCard.append(thisIsText);
