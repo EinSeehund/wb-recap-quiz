@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="form.js" defer></script>
+        <title>What's that bird? - Add new bird</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                What's that <br />
+                bird?
+            </h1>
+        </header>
+        <nav>
+            <ul id="main-nav">
+                <li>
+                    <a
+                        href="index.html"
+                        class="main-nav__item"
+                        aria-label="Home"
+                        ><img src="assets/birdhouse.png" aria-hidden="true" />
+                        <p class="main-nav__item--text">Home</p></a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="bookmark.html"
+                        class="main-nav__item"
+                        aria-label="Favourites"
+                        ><img src="assets/feather.png" aria-hidden="true" />
+                        <p class="main-nav__item--text">Favourites</p></a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="form.html"
+                        class="main-nav__item main-nav__item--active"
+                        aria-label="Add new bird"
+                        ><img src="assets/egg.svg" aria-hidden="true" />
+                        <p class="main-nav__item--text">New bird</p></a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="profile.html"
+                        class="main-nav__item"
+                        aria-label="Profile"
+                        ><img src="assets/bird.png" aria-hidden="true" />
+                        <p class="main-nav__item--text">Profile</p></a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <main data-js="main-container">
+            <h2>Add a new bird</h2>
+            <form class="" data-js="new-bird-form">
+                <label for="bird-name">Name</label>
+                <input
+                    type="text"
+                    id="bird-name"
+                    name="bird-name"
+                    data-js="input-name"
+                    maxlength="150"
+                    required
+                />
+                <p class="form__character-counter"><span data-js="character-count">0</span> / 150</p>
+                <label for="img-url">Image URL</label>
+                <input
+                    type="text"
+                    id="img-url"
+                    name="img-url"
+                    data-js="input-img-url"
+                    required
+                />
+                <label for="level">Level</label>
+                <select name="level" id="level" data-js="input-level" required>
+                    <option value="">--Please choose a level--</option>
+                    <option value="1">lvl 1</option>
+                    <option value="2">lvl 2</option>
+                    <option value="3">lvl 3</option>
+                </select>
+                <label for="commonness">Commonness</label>
+                <select
+                    name="commonness"
+                    id="commonness"
+                    data-js="input-commonness"
+                    required
+                >
+                    <option value="">--How common is that bird?--</option>
+                    <option value="common">common</option>
+                    <option value="uncommon">uncommon</option>
+                    <option value="rare">rare</option>
+                    <option value="veryrare">very rare</option>
+                </select>
+                <label for="bird-type">Type</label>
+                <select
+                    name="bird-type"
+                    id="bird-type"
+                    data-js="input-bird-type"
+                    required
+                >
+                    <option value="">--Please pick a type--</option>
+                    <option value="songbird">songbird</option>
+                    <option value="birdofprey">bird of prey</option>
+                    <option value="owl">owl</option>
+                    <option value="birdofparadise">bird of paradise</option>
+                    <option value="penguin">penguin</option>
+                </select>
+                <input
+                    type="submit"
+                    class="submit-button"
+                    data-js="submit-button"
+                    value="Add that bird!"
+                />
+            </form>
+        </main>
+    </body>
+</html>
