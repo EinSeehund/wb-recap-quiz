@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <script src="index.js" defer></script>
         <title>What's that bird? - Home</title>
     </head>
     <body>
@@ -46,8 +47,12 @@
         </nav>
         <main>
             <div class="card">
-                <button class="card__btn-bookmark">
-                    <img src="assets/feather.png" />
+                <button class="card__btn-bookmark" data-js="card__btn-bookmark">
+                    <img
+                        src="assets/feather.png"
+                        class="card__btn-bookmark--img"
+                        data-js="card__btn-bookmark--img"
+                    />
                 </button>
                 <img
                     src="assets/birdimgs/birdy-jn3rkjb4.jpg"
@@ -55,16 +60,19 @@
                     class="card__img"
                 />
                 <p>This is a(n)</p>
-                <h2 class="card__bird-name card__bird-name--hidden">
+                <h2 class="card__bird-name card__bird-name--hidden" data-js="card__bird-name">
                     Mistle Thrush
                 </h2>
-                <button class="card__btn-solution">Show solution</button>
+                <button class="card__btn-solution" data-js="card__btn-solution">
+                    Show solution
+                </button>
                 <div class="card__tag-wrapper">
                     <p class="card__tag">Lvl 2</p>
                     <p class="card__tag">common</p>
                     <p class="card__tag">songbird</p>
                 </div>
             </div>
+
             <div class="card">
                 <button class="card__btn-bookmark card__btn-bookmark--check">
                     <img src="assets/feather_white.svg" />
